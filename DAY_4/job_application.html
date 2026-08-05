@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            width: 400px;
+            background-color: white;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+
+        h2{
+            text-align: center;
+            color: darkblue;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"]{
+            width: auto;
+        }
+
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: darkgreen;
+        }
+
+        input[type="reset"]{
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover{
+            background-color: darkred;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Job Application Form</h2>
+
+<form>
+
+<label>Full Name:</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email:</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Phone Number:</label>
+<input type="tel" placeholder="Enter your phone number">
+
+<label>Date of Birth:</label>
+<input type="date">
+
+<label>Gender:</label><br>
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+
+<br><br>
+
+<label>Highest Qualification:</label>
+
+<select>
+    <option>Select</option>
+    <option>10th</option>
+    <option>Intermediate</option>
+    <option>B.Tech</option>
+    <option>M.Tech</option>
+</select>
+
+<label>Skills:</label><br>
+
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+<input type="checkbox"> Java
+
+<br><br>
+
+<label>Experience:</label>
+
+<textarea rows="4" placeholder="Write about your experience"></textarea>
+
+<label>Upload Resume:</label>
+<input type="file">
+
+<label>Preferred Location:</label>
+<input type="text" placeholder="Enter your city">
+
+<input type="submit" value="Apply">
+
+<input type="reset" value="Reset">
+
+</form>
+
+</div>
+
+</body>
+</html>
